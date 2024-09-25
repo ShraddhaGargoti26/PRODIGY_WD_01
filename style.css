@@ -1,0 +1,238 @@
+.bg {
+   background: url('./image/alan.jpg') no-repeat center center/cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: hsla(0, 0%, 100%, 0.826);
+text-align: center;
+position: relative;
+flex-direction: column;
+}
+
+.bg h1 {
+    font-size: 48px;
+    margin-top: 520px;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Add border to make button visible */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #fdf9f9; /* Change background color on hover */
+    color: #010000;            /* Change text color on hover */
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: #01000051;
+    position: fixed;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fbfbfb;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin-left: 0px;
+}
+nav ul li {
+    margin-left: 10px;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+        color: #fdf9f9;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 4px 2px;
+        padding: 16px 30px;
+        border-radius: 5px;
+        border: 2px solid #fff; /* Add border to make button visible */
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+    
+}
+
+nav ul li a:hover {
+    background-color: #f4f6f6fa; 
+    text-transform: uppercase;/* Change background color on hover */
+    color: #01070b;   
+    border: 2px solid #0f0101;
+}
+
+
+/*for band page*/
+.bg1 {
+    background: url('./image/dj.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bg1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.content {
+   
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+     /* semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #e7e0e0;
+}
+
+.head h1 {
+    
+    margin-top: 40px;
+    background-color: rgba(7, 7, 7, 0.7);
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    border-radius: 5px;
+}
+#unorder{
+    background-color: rgba(204, 213, 212, 0.079);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+  
+    color: #ece3e3;
+
+}
+
+.head p,  .head ol{
+    background-color:  rgba(204, 213, 212, 0.137);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #faf7f7;
+}
+/*for music*/
+
+/* Music Section */
+.music {
+    padding-top: 150px;
+    width: 90%;
+    margin: auto;
+}
+
+body{
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(11, 51, 91), rgb(155, 213, 234));
+    background-attachment: fixed;
+}
+.music h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.song-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.song-item {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.song-item img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.song-item img:hover {
+    transform: scale(1.05);
+}
+
+.color-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #0a0301;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .song-container {
+        flex-direction: column;
+    }
+
+    .song-item {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        padding: 8px 16px;
+    }
+}
